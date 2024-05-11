@@ -112,5 +112,20 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
-
 }
+
+.second-nav {
+    grid-column: 2 /10;
+    grid-row: 3 / 4;
+}
+
+.second-nav-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr))
+}
+
+.dropdown {
+    display: none;
+}
+
+
