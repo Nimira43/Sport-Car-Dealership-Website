@@ -175,6 +175,14 @@ body {
     padding: 1.6rem;
     display: grid;
     grid-template-columns: repeat(7, 10rem);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.second-nav-item:first-child:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
 }
 
 .dropdown-first-list {
@@ -190,4 +198,20 @@ body {
     width: 100%;
 }
 
+.dropdown-list-item {
+    list-style: none;
+}
+
+.dropdown-list-link {
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #222;
+    margin: 0 0 1rem 1.6rem;
+    display: block;
+}
+
+.dropdown-list-link:hover {
+    color: darkgoldenrod;
+}
 
