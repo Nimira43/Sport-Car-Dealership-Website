@@ -17,7 +17,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
-    grid-template-rows: repeat(3, mincontent);
+    grid-template-rows: repeat(3, min-content) 70vh;
     grid-row-gap: 1.6rem;
     margin-top: 1.6rem;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .social-icon:hover {
-    color: darkgoldenrod;
+    color: goldenrod;
     transform: rotateZ(360deg);
 }
 
@@ -66,7 +66,7 @@ body {
     content: '';
     width: 0;
     height: 0.1rem;
-    background-color: darkgoldenrod;    
+    background-color: goldenrod;    
     display: block;
     margin: auto;
     transition: width 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -78,7 +78,7 @@ body {
 
 .first-nav-link span {
     font-size: 1.3rem;
-    color: darkgoldenrod;    
+    color: goldenrod;    
 }
 
 .first-nav-link i {
@@ -139,7 +139,7 @@ body {
 }
 
 .second-nav-item:hover .second-nav-link {
-    background-color: darkgoldenrod;
+    background-color: goldenrod;
     color: white;
 }
 
@@ -148,7 +148,7 @@ body {
     content: '';
     width: 0;
     height: 0.1rem;
-    background-color: darkgoldenrod;
+    background-color: goldenrod;
     display: block; 
     transition: width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0.5s 0.3s;
 }
@@ -160,7 +160,7 @@ body {
 .second-nav-item:hover .second-nav-link:before,
 .second-nav-item:hover .second-nav-link:after {
     width: 100%;
-    background-color: goldenrod;
+    background-color: gold;
 }
 
 .second-nav-item:first-child {
@@ -209,9 +209,53 @@ body {
     color: #222;
     margin: 0 0 1rem 1.6rem;
     display: block;
+    transition: color 0.3s;
 }
 
 .dropdown-list-link:hover {
-    color: darkgoldenrod;
+    color: goldenrod;
 }
 
+.banner {
+    grid-column: 2 / 10;
+    grid-row: 4 / 5;
+    background-color: #eee;
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.banner-heading {
+    /* font-size: 10rem; */
+    font-size: 5rem;
+    color: #222;
+    margin-bottom: 6rem;
+}
+
+.banner-btn {
+    width: 16rem;
+    height: 5rem;
+    background: linear-gradient(
+        to top,
+        black,
+        #222,
+        #444    
+    );
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+
+
+.slideshow {
+    display: none;
+}
